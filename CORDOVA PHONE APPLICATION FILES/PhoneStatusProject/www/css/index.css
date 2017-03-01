@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana;
+    background-color: black;
+    text-align: center;
+}
+
+#description {
+    background-color: #FFDAB9;
+    color:  #191970;
+    font-weight: bold;
+}
+
+.info {
+    background-color: #E6E6FA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid   #C0C0C0;
+}
+
+ul {
+    list-style-type: none;
+    height: 70px;
+}
+
+.info ul li {
+    font-size: 20px;
+    text-align: center;
+    color:  #0000FF;
+}
+
+.app {
+    background-color: #F5F5F5;
+    text-align: center;
+    border: 5px solid #FF6347;
+    border-radius: 20px;
+}
+
+#header {
+    color:  #191970;
+    background-color: #FFE4B5;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #000080;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#timestamp {
+    font-size: 20px;
+    text-align: center;
+    color:  #0000FF;
+}
+
+#batteryLevel {
+    font-size: 20px;
+    text-align: center;
+    color:  #0000FF;
+}

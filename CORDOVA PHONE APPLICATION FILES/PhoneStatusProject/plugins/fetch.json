@@ -1,0 +1,66 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-battery-status": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-battery-status@~1.2.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device-orientation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

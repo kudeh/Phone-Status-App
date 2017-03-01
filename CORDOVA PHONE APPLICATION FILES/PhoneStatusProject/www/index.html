@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" />-->
+        <title>Phone Status</title>
+    </head>
+    <body>
+        <div class="app">
+
+            <div id="header">           
+               <h1>Phone Status</h1>
+            </div>
+
+            <div id="description">
+              <p>Gets the device info, battery level, location, speed and other data.</p>
+            </div>
+
+              <div class="info">
+               <h3>Time Stamp</h3>
+               <p id="timestamp"></p>
+              </div>
+
+              <div class="info">
+               <h3>Device Information</h3>
+               <ul>
+                <li id="model"></li>
+                <li id="platform"></li>
+                <li id="version"></li>
+                <li id="manufacturer"></li>
+               </ul>
+              </div>
+
+              <div class="info">
+               <h3>Battery</h3>
+               <p id="batteryLevel"></p>
+              </div>
+
+               <div class="info">
+               <h3>Network Connection and Status</h3>
+               <ul>
+                <li id="connectionType"></li>
+                <li id="networkStatus"></li>
+               </ul>
+              </div>
+
+              <div class="info">
+               <h3>Location</h3>
+               <ul>
+                <li id="latitude"></li>
+                <li id="longitude"></li>
+               </ul>
+              </div>
+
+              <div class="info">
+               <h3>Speed and Direction</h3>
+               <ul>
+                <li id="speed"></li>
+                <li id="direction"></li>
+               </ul>
+              </div>
+
+<!--<button>Send an HTTP POST request to a page and get the result back</button>-->
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script>
+ $(document).ready(function(){
+    $("button").click(function(){
+        document.getElementById("ax").innerHTML = "leeee";
+        $.post("http://192.168.0.12:8080",
+        {
+          name: "Donald Duck",
+          city: "Duckburg"
+        },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>-->
+    </body>
+</html>
