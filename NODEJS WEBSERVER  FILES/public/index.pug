@@ -1,0 +1,68 @@
+html
+  head
+    title PHONE STATUS
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='phonestatus.css')
+    link(rel='stylesheet', href='battery.css')
+    script(src='https://code.highcharts.com/highcharts.js')
+    script(src='https://code.highcharts.com/highcharts-more.js')
+    script(src='https://code.highcharts.com/modules/exporting.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAWeV9W2Xm3WxDhQvzsKAxeF_XmA80TnjA&callback=initMap')
+  body
+    .container
+      .row
+        .col-md-12
+          h1#header.shadow PHONE STATUS APP
+      .row.notfirst
+        #phone_info.col-md-4.row2
+          h2 PHONE INFO
+          ul
+            li #{model} Nexus
+            li #{version} 1.1.1
+            li #{platform} Android
+            li #{Manufacturer} LGE
+        #network_status.col-md-4.row2
+          h2 NETWORK STATUS
+          ul
+            li #{connectionType} Wifi Connection
+            li #{networkStatus} Online
+        #battery_level.col-md-4.row2
+          h2 BATTERY LEVEL
+          #batterylife
+            #batterylife-amount
+              span #{batteryLevel} 73
+      .row.notfirst
+        .col-md-12.location
+          p #{longitude}
+          p #{latitude}
+          h2 LOCATION
+          #mapholder
+      .row.notfirst
+        .col-md-6
+          h2#comphead COMPASS
+          p#comptext
+            | Compass is at 
+            span #{direction} 150
+            |  degrees
+          canvas#compass(width='200px', height='200px')
+        .col-md-6
+          h2 SPEEDOMETER
+          p #{speed}
+          p #{speedArr}
+          p #{timeArr}
+          #speedometer(style='min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto')
+      .row
+        .col-md-12
+          h2 GRAPH
+          #graph(style='min-width: 310px; height: 400px; margin: 0 auto')
+    script(type='text/javascript', src='battery.js')
+    script(type='text/javascript', src='location.js')
+    script(type='text/javascript', src='compass.js')
+    script(type='text/javascript', src='speedometer.js')
+    script(type='text/javascript', src='graph.js')
+  html
+

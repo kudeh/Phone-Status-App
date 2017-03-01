@@ -1,0 +1,12 @@
+#batterylife {
+    position: relative;
+    height: 50px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+#batterylife-amount {
+    position: relative;
+    height: 48px;
+    background: green;
+}
