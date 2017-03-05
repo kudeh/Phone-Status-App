@@ -1,6 +1,6 @@
 var express = require('express')
 const pg = require('pg');
-const conString = 'postgres://kudeh:kene95@localhost/phonestatus';
+const conString = 'postgres://****:******@localhost/********';//insert username an password.
 var bodyParser = require('body-parser')
 var pug = require('pug')
 var path = require('path')
